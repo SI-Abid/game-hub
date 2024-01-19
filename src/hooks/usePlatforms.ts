@@ -14,11 +14,7 @@ const usePlatforms = () =>
   useQuery({
     queryKey: ["platforms"],
     queryFn: apiClient.getAll,
-    initialData: {
-      count: platforms.length,
-      results: platforms,
-      next: null,
-    },
+    initialData: platforms,
   });
 
 export default usePlatforms;
