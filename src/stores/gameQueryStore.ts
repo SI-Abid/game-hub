@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { GameQuery } from "../entities/GameQuery";
+import { GameQuery } from "./GameQuery";
 
 interface GameQueryStore {
   gameQuery: GameQuery;
