@@ -9,25 +9,27 @@ const SearchInput = () => {
   const navigate = useNavigate();
   const ref = useRef<HTMLInputElement>(null);
   return (
-    <form
-      onSubmit={(event) => {
-        event.preventDefault();
-        if (ref.current) {
-          setSearchText(ref.current.value);
-          navigate("/");
-        }
-      }}
-    >
-      <InputGroup>
-        <InputLeftElement children={<BsSearch />} />
-        <Input
-          ref={ref}
-          borderRadius={20}
-          placeholder="Search Games..."
-          variant={"filled"}
-        />
-      </InputGroup>
-    </form>
+    <div style={{ width: "100%" }}>
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          if (ref.current) {
+            setSearchText(ref.current.value);
+            navigate("/");
+          }
+        }}
+      >
+        <InputGroup>
+          <InputLeftElement children={<BsSearch />} />
+          <Input
+            ref={ref}
+            borderRadius={20}
+            placeholder="Search Games..."
+            variant={"filled"}
+          />
+        </InputGroup>
+      </form>
+    </div>
   );
 };
 

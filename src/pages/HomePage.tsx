@@ -5,7 +5,7 @@ import GenreList from "../components/GenreList";
 import PlatformSelector from "../components/PlatformSelector";
 import SortSelector from "../components/SortSelector";
 
-const Homepage = () => {
+const HomePage = () => {
   return (
     <Grid
       templateAreas={{
@@ -14,7 +14,7 @@ const Homepage = () => {
       }}
       templateColumns={{
         base: "1fr",
-        lg: "200px 1fr",
+        lg: "250px 1fr",
       }}
     >
       <Show above="lg">
@@ -38,4 +38,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;
